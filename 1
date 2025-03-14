@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leap Year Checker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let nam = parseInt(prompt("Mời bạn nhập vào một năm: "), 10); // Ensure input is treated as a number
+        if ((nam % 4 === 0 && nam % 100 !== 0) || (nam % 400 === 0)) {
+            document.write("Năm " + nam + " là năm nhuận");
+        } else {
+            document.write("Năm " + nam + " không phải là năm nhuận");
+        }
+    </script>
+</body>
+</html>
